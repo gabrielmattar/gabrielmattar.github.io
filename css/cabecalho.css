@@ -2,7 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   background-image: url("../imgs/background.jpg");
-  background-repeat: no-repeat;
+  background-repeat:space;
   background-attachment: fixed;
   height: 100%;
 }
