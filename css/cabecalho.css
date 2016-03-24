@@ -2,8 +2,8 @@ body {
   margin: 0px;
   padding: 0px;
   background-image: url("../imgs/background.jpg");
-  background-repeat:space;
-  background-attachment: fixed;
+  background-repeat:repeat-y;
+  background-attachment:fixed;
   height: 100%;
 }
 header {
@@ -138,6 +138,10 @@ h1 {
 
 @media only screen and (max-device-width: 860px),
 screen and (max-width: 860px){
+  #corpo {
+    background-image: none;
+    background-color: #D8D8D8  ;
+  }
   .logo{
     display: none;
   }
