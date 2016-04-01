@@ -2,8 +2,10 @@ body {
   margin: 0px;
   padding: 0px;
   background-image: url("../imgs/background.jpg");
-  background-repeat:repeat-y;
-  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-attachment:inherit;
+  background-position: center;
+  background-color: black;
   height: 100%;
 }
 header {
@@ -151,7 +153,8 @@ screen and (max-width: 860px){
   }
   .menu {
     display: inline;
-    height: 48px;
+    width: 100%;
+    overflow: hidden;
     padding-top: 0px;
   }
   .menu > ul {
@@ -164,6 +167,8 @@ screen and (max-width: 860px){
   }
   .tag-menu{
     display: block;
+    width: 100%;
+    box-sizing: border-box;
   }
   .menu > ul > li{
     width: 100%;
