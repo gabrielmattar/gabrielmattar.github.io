@@ -1,0 +1,40 @@
+.conteudo {
+  background-color: transparent;
+  text-align: center;
+}
+
+.bolinha {
+  box-sizing: border-box;
+  margin: 0px 2%;
+  padding: 0px;
+  width:250px;
+  height:250px;
+  margin-top: 10%;
+  border-radius:50%;
+  color:#fff;
+  text-align:center;
+  background: #003d66;
+  display: inline-block;
+}
+
+
+.bolinha:hover {
+  background: #008ae6;
+  color: black;
+}
+
+.bolinha p {
+  text-align: center;
+  padding-top: 50px;
+  font-size:1.5em;
+  line-height:1.1em;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+}
+
+.bolinha p strong {
+  margin-left: -10px;
+  text-align: center;
+  line-height: 2em;
+  font-size: 2em;
+}

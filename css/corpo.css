@@ -14,7 +14,22 @@
   line-height: 1em;
   text-align: justify;
 }
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url("../imgs/background2.jpg");
 
+  -webkit-transition: background-image 2s ease-in-out;
+  -ms-transition: background-image 2s ease-in-out;
+  -moz-transition: background-image 2s ease-in-out;
+  -o-transition: background-image 2s ease-in-out;
+  transition: background-image 2s ease-in-out;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  height: 100%;
+}
 h2 {
     font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
     text-align: center;

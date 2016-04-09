@@ -10,12 +10,37 @@
 }
 .conteudo {
   display: inline-block;
+  background-color: transparent;
+  width: 100%;
 }
+.conteudo-esquerda{
+  float: left;
+  display: inline-block;
+  background-color: #248f24;
+  width: 30%;
+  padding: 10px 0px;
+  border-radius: 15px 50px 30px 5px;
+  box-shadow: 5px 5px 10px black;
+  margin-top: 50px;
+  text-align: center;
+}
+.conteudo-esquerda p {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size:2.5em;
+  line-height:2em;
+  font-family: 'Catamaran', sans-serif;
+  color: white;
+}
+
+
 .conteudo form {
   width: 100%;
   clear: both;
   display: block;
   float: right;
+  color: white;
 }
 .conteudo #alinhado div input {
     size: 100%;
@@ -36,30 +61,22 @@
   font-family: Arial;
   margin: 5px 40px;
   font-size: 20px;
-  color: black;
+  color: white;
   line-height: 1em;
   text-align: justify;
 }
 
 .conteudo-cadastro{
-  float: right;
   display: inline-block;
-  background-color: #C8C8C8 ;
-  width: 50%;
-  margin-top: 50px;
+  background-color: #330033;
+  width: 40%;
+  margin-top: 25px;
+  margin-left: -100px;
   padding-top: 25px;
   padding-bottom: 10px;
-
+  border-radius: 50px 5px 15px 30px;
+  box-shadow: 5px 5px 10px black;
 }
-.conteudo-esquerda{
-  float: left;
-  display: inline-block;
-  background-color: white;
-  width: 50%;
-  padding: 10px 0px;
-
-}
-
 .conteudo input[name='fnome'],
 .conteudo input[name='lname']{
   width:30%;
@@ -80,10 +97,7 @@ screen and (max-width: 700px){
   .conteudo-cadastro {
       float: none;
       margin-top: 20px;
+      border-radius: 20px;
       width: 80%;
-  }
-  .conteudo {
-    display: block;
-    background-color: #C8C8C8;
   }
 }
