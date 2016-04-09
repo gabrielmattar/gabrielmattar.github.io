@@ -11,11 +11,15 @@ var fundonovo;
 var changebackground = setInterval(mudabackground, 9000);
 
 function mudabackground() {
- 	atual++;
-  atual = (atual+todasAsImagens.length) % todasAsImagens.length;
-  fundonovo = servidorDasImagens + todasAsImagens[atual];
+  if(window.innerWidth > 860){
+   	atual++;
+    atual = (atual+todasAsImagens.length) % todasAsImagens.length;
+    fundonovo = servidorDasImagens + todasAsImagens[atual];
 
-  document.body.style.backgroundImage = "url(" + fundonovo + ")";
-  console.log(fundonovo);
+    document.body.style.backgroundImage = "url(" + fundonovo + ")";
+    console.log(fundonovo);
+  } else {
+    document.body.style.backgroundImage = "none";
+  }
   //alert(document.body.style.backgroundImage);
 }

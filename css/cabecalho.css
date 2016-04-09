@@ -120,7 +120,7 @@ h1 {
 
 .tag-menu {
   display: none;
-  background-color: #484848;
+  background-color: #003366;
   cursor: pointer;
   padding: 10px;
 }
@@ -138,12 +138,15 @@ h1 {
 @media only screen and (max-device-width: 860px),
 screen and (max-width: 860px){
   #corpo {
-    /*background-image: none;
-    background-color:  #809fff ;*/
+    background-image: none;
+    background-color:  #809fff ;
+  }
+  header {
+    opacity: 1;
   }
   header h1 {
+    padding-top: 10px;
     font-size: 20px;
-
   }
   .logo{
     display: none;
