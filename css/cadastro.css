@@ -26,7 +26,7 @@
   background-color: #330033;
   width: 30%;
   margin-top: 25px;
-  margin-left: -100px;
+  margin-left: 0px;
   padding-top: 25px;
   padding-bottom: 10px;
   border-radius: 50px 5px 15px 30px;
@@ -55,6 +55,8 @@
 .conteudo {
   display: inline-block;
   background-color: transparent;
+  box-sizing: border-box;
+  margin: 0px;
   width: 100%;
 }
 .conteudo-esquerda{
@@ -62,6 +64,7 @@
   display: inline-block;
   background-color: #248f24;
   width: 30%;
+  margin-left: 10%;
   padding: 10px 0px;
   border-radius: 15px 50px 30px 5px;
   box-shadow: 5px 5px 10px black;
@@ -117,7 +120,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 20px 0 5px 0; 
+  margin: 20px 0 5px 0;
 }
 
 .next:hover {

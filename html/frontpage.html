@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="../css/cabecalho.css">
     <link rel="stylesheet" href="../css/frontpage.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/login.css">
 
     <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:700' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 
   </head>
 
@@ -20,7 +20,22 @@
     <header>
       <h1>Campeonatos Irados</h1>
     </header>
-    <nav class = 'menu'>
+    <div class='login'>
+      <form>
+        <strong>User:</strong>
+        <div>
+          <input type="text" name="loginnome" required/>
+        </div>
+
+        <strong>Pass:</strong>
+        <div>
+          <input type='text' name='loginsenha' required/>
+        </div>
+        <button class='next' type='loginbutton'>Login</button>
+      </form>
+    </div>
+
+    <nav class='menu'>
       <div class='logo'><img src="../imgs/GM_logo.jpeg"></div>
       <ul>
         <li >
@@ -42,7 +57,7 @@
           </div>
         </li>
         <li >
-          <a href="cadastro.html" class="item-menu" id="login">REGISTRO</a>
+          <a href="cadastro.html" class="item-menu">REGISTRO</a>
         </li>
         <li>
           <a href="#" class="item-menu" id="login">LOGIN</a>
@@ -80,11 +95,8 @@
       </ul>
     </footer>
 
-    <script>
-      $('.tag-menu').on('click', function(){
-        $('.menu > ul').toggleClass('aparece');
-      });
-    </script>
+    <script src='../js/login.js'></script>
+    <script src='../js/submenu.js'></script>
     <script src='../js/background.js'> </script>
   </body>
 
