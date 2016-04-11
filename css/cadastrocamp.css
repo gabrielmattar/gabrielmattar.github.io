@@ -1,23 +1,37 @@
+
 .conteudo-cadastro{
   background-color: #330033;
-  border: 2px solid green;
-  border-radius: 10px;
-}
-.button-next{
+  border: 2px solid darkgreen;
+  border-radius: 3px;
+  margin: 0 auto;
   padding-top: 20px;
-  font-family:Helvetica Neue;
-  font-weight:bold;
-
+  box-shadow: 5px 5px 5px black;
+  width: 80%;
 }
-
 .conteudo-cadastro #participantes{
   width: 100%;
   padding-top: 5px;
 
 }
-.conteudo-cadastro button{
-  color: green;
+.conteudo-cadastro form button{
+  margin: 10px 10px;
+  padding:5px 20px;
+  background:green;
+  border:0;
+  border-radius: 2px;
+  color: white;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  outline: 0;
+}
 
+.bmaismenos[type=button] {
+  box-sizing: border-box;
+  padding: 0px;
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  outline: 0;
 }
 .conteudo-cadastro #alinhado{
   padding-top: 20px;
@@ -26,13 +40,13 @@
 }
 .conteudo-cadastro strong{
   display: inline-block;
-  margin-bottom: 8px;
   width: 100%;
-  font-family: sans-serif;
-  margin: 10px 0px;
-  font-size: 20px;
+  font-family: 'Catamaran', sans-serif;
+  margin: 20px 0px 0px 0px;
+  font-size: 30px;
   color: white;
   line-height: 1em;
+  font-weight: normal;
   text-align: center;
 
 }
@@ -59,24 +73,51 @@
                 font-family:Helvetica Neue;
                 font-weight:bold;
 }
+
 .adicionar .bmaismenos:hover,
-.button-submit .submitn:hover,
-.button-next .next:hover{
+.submitn:hover,
+.next:hover{
   box-shadow: 5px 5px 5px black;
   color: white;
   background-color: green;
   transform: translateY(-3px);
   border-color: green;
-  border-radius: 5px;
 
+  outline: 0;
 }
 .adicionar .bmaismenos:active,
-.button-submit .submitn:active,
-.button-next .next:active{
+.submitn:active,
+.next:active{
   box-shadow: 5px 5px 5px black;
   color: #1f7a1f;
   background-color: #e0e0d2;
   transform: translateY(-3px);
-  border-radius: 5px;
+  outline: 0;
 
+}
+
+form input {
+    -webkit-appearance: none;
+    appearance: none;
+    display: inline-block;
+    height: 29px;
+    margin: 5px 5px;
+    padding: 0 8px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+
+form input:hover {
+    border: 1px solid #b9b9b9;
+    border-top: 1px solid #a0a0a0;
+    -webkit-box-shadow: inset 0 3px 3px rgba(0,0,0,0.2);
+    -moz-box-shadow: inset 0 3px 3px rgba(0,0,0,0.2);
+    box-shadow: inset 0 3px 3px rgba(0,0,0,0.2);
 }
