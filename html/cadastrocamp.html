@@ -5,14 +5,14 @@
      <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel="stylesheet" href="../css/corpo.css">
     <link rel="stylesheet" href="../css/cabecalho.css">
+    <link rel="stylesheet" href="../css/frontpage.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/cadastrocamp.css">
+    <link href='https://fonts.googleapis.com/css?family=Catamaran' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=New+Rocker' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cinzel+Decorative:700' rel='stylesheet' type='text/css'>
-
 
   </head>
 
@@ -34,8 +34,7 @@
         <button class='next' type='loginbutton'>Login</button>
       </form>
     </div>
-
-    <nav class = 'menu'>
+    <nav class='menu'>
       <div class='logo'><img src="../imgs/GM_logo.jpeg"></div>
       <ul>
         <li >
@@ -67,54 +66,55 @@
 
     </nav>
 
-
     <div class='conteudo'>
-      <div class='conteudo-esquerda'>
-        <p>Junte-se a nós <br> Não dói nada!<br>É de grátis!</p>
-
-      </div>
 
       <div class='conteudo-cadastro'>
         <form>
-           <strong>  Nome: </strong>
+           <strong>  Nome do Campeonato: </strong>
            <div id="alinhado" >
-             <input type="text" name="fnome" placeholder="Nome" size=20px required>
-             <input type="text" name="lname" placeholder="Sobrenome" size=20px required>
+             <input type="text" name="nomec" placeholder="Nome" pattern="[^'\x22]+" title="Aspas inválida" required>
            </div>
+           <strong>  Número de participantes: </strong>
+           <div id="alinhado" >
+             <input type="number" min="0" name="nomec" placeholder="4" required>
 
-            <strong>Sexo:</strong>
-            <div id="sexo">
-              <input type="radio" name="sex" value="male">Male
-              <input type="radio" name="sex" value="Female">Female
-              <input type="radio" name="sex" value="Female">Other
-            </div>
-
-            <strong>Email:</strong>
-            <div id="alinhado">
-              <input type="email" name="email" placeholder="exemplo@email.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"  required>
-            </div>
-
-            <strong>Username:</strong>
-            <div id="alinhado">
-              <input type="text" name="unome" placeholder="Username" required>
-            </div>
-
-            <strong>Senha:</strong>
-            <div id="alinhado">
-              <input type="password" pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,50}" name="senha" placeholder="Senha" title="Senha de 8 a 50 dígitos com no mínimo uma letra e um número" required>
-            </div>
-
-            <strong>Repita a senha:</strong>
-            <div id="alinhado">
-              <input type="password" name="senha" placeholder="Insira novamente a Senha" required>
-            </div>
-
+           </div>
+           <div class="button-submit">
+             <button class='submitn' type='button'>Submit</button>
+           </div>
+           <strong>  Nome dos Times: </strong>
+           <div id="alinhado" >
+              <div id="times">
+               <input type="text" name="nomet" placeholder="Nome time 1"  required>
+               <div id="participantes">
+                 <input type="text" name="nomep" placeholder="Nome participante 1" required>
+                 <input type="text" name="nomep" placeholder="Nome participante 2" required>
+                 <input type="text" name="nomep" placeholder="Nome participante 3" required>
+                 <input type="text" name="nomep" placeholder="Nome participante 4" required>
+               </div>
+             </div>
+           </div>
+           <div id="alinhado" >
+             <div id="times">
+               <input type="text" name="nomet" placeholder="Nome time 2"  required>
+               <div id="participantes">
+                 <input type="text" name="nomep" placeholder="Nome participante 1" required>
+                 <input type="text" name="nomep" placeholder="Nome participante 2" required>
+                 <input type="text" name="nomep" placeholder="Nome participante 3" required>
+                 <input type="text" name="nomep" placeholder="Nome participante 4" required>
+               </div>
+             </div>
+           </div>
+           <div class="adicionar">
+              <button class='bmaismenos' type="button">-</button>
+              <button class='bmaismenos' type="button">+</button>
+           </div>
+           <div class="button-next">
             <button class='next' type='submit'>Next</button>
-
+          </div>
         </form>
       </div>
   </div>
-
 
     <footer>
       <ul class='footer'>

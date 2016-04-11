@@ -1,0 +1,82 @@
+.conteudo-cadastro{
+  background-color: #330033;
+  border: 2px solid green;
+  border-radius: 10px;
+}
+.button-next{
+  padding-top: 20px;
+  font-family:Helvetica Neue;
+  font-weight:bold;
+
+}
+
+.conteudo-cadastro #participantes{
+  width: 100%;
+  padding-top: 5px;
+
+}
+.conteudo-cadastro button{
+  color: green;
+
+}
+.conteudo-cadastro #alinhado{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.conteudo-cadastro strong{
+  display: inline-block;
+  margin-bottom: 8px;
+  width: 100%;
+  font-family: sans-serif;
+  margin: 10px 0px;
+  font-size: 20px;
+  color: white;
+  line-height: 1em;
+  text-align: center;
+
+}
+::-webkit-input-placeholder { /* For WebKit browsers */
+    color:    green;
+                font-family:Helvetica Neue;
+                font-weight:bold;
+}
+
+:-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+    color:    green;
+                font-family:Helvetica Neue;
+                font-weight:bold;
+}
+
+::-moz-placeholder { /* For Mozilla Firefox 19+ */
+    color:   green;
+                font-family:Helvetica Neue;
+                font-weight:bold;
+}
+
+:-ms-input-placeholder { /* For Internet Explorer 10+ */
+    color:    green;
+                font-family:Helvetica Neue;
+                font-weight:bold;
+}
+.adicionar .bmaismenos:hover,
+.button-submit .submitn:hover,
+.button-next .next:hover{
+  box-shadow: 5px 5px 5px black;
+  color: white;
+  background-color: green;
+  transform: translateY(-3px);
+  border-color: green;
+  border-radius: 5px;
+
+}
+.adicionar .bmaismenos:active,
+.button-submit .submitn:active,
+.button-next .next:active{
+  box-shadow: 5px 5px 5px black;
+  color: #1f7a1f;
+  background-color: #e0e0d2;
+  transform: translateY(-3px);
+  border-radius: 5px;
+
+}

@@ -1,0 +1,32 @@
+
+.conteudo table{
+  font-family: 'Goudy Bookletter 1911', Georgia, Times, serif;
+  font-size: 15px;
+  width:90%;
+  height: auto;
+  margin: 5%;
+  border: 2px solid #330033;
+  border-collapse: collapse;
+}
+.conteudo th, td {
+  border: 1px solid #330033;
+  border-collapse: collapse;
+  text-align: center;
+}
+form {
+                width:100%;
+                margin:50px auto;
+}
+.search {
+                padding:8px 15px;
+                background:#aa3f0d;
+                border:2px solid #330033;
+                border-radius: 5px;
+                color: black;
+
+}
+.conteudo{
+  background-color: #aa3f0d;
+  border-radius: 10px;
+
+}

@@ -26,9 +26,9 @@
           <input type="text" name="loginnome" required/>
         </div>
 
-        <strong>Pass:</strong>
+        <strong>Password:</strong>
         <div>
-          <input type='text' name='loginsenha' required/>
+          <input type='password' name='loginsenha' required/>
         </div>
         <button class='next' type='loginbutton'>Login</button>
       </form>
@@ -46,7 +46,7 @@
             <div class="menu-sub">
               <ul>
                 <li>
-                  <a href="#">CRIAR NOVO</a>
+                  <a href="cadastrocamp.html">CRIAR NOVO</a>
                 </li>
                 <li>
                   <a href="lista.html">CAMPEONATOS</a>
@@ -68,67 +68,72 @@
 
 
     <div class = 'conteudo'>
+      <div id="pesquisa">
+        <form>
+          <input type="text" placeholder="Search..." pattern="[^'\x22]+" title="Proibido aspas" >
+          <button class="search" type='searchbutton' >Search</button>
+        </form>
+      </div >
+      <div id="tabela">
+        <table>
+          <tr>
 
-      <table>
+            <th id = 'identificadores'><strong>CAMPEONATO</strong></th>
+            <th id = 'identificadores'><strong>N# DE PARTICIPANTES</strong></th>
+            <th id = 'identificadores'><strong> CONCLUIDO</strong></th>
+            <th id = 'identificadores'><strong>VENCEDOR</strong></th>
+
+        </tr>
         <tr>
-          <td id = 'identificadores'><strong>CAMPEONATO</strong></td>
-          <td id = 'identificadores'><strong>N# DE PARTICIPANTES</strong></td>
-          <td id = 'identificadores'><strong> CONCLUIDO</strong></td>
-          <td id = 'identificadores'><strong>VENCEDOR</strong></td>
-      </tr>
-      <tr>
-          <td id = 'items'>Computação</td>
-          <td id = 'items'>8</td>
-          <td id = 'items'>20%</td>
-          <td id = 'items'>-</td>
-      </tr>
-      <tr>
-          <td id = 'items'>Nosso Campeonato</td>
-          <td id = 'items'>4</td>
-          <td id = 'items'>100%</td>
-          <td id = 'items'>Marchezini</td>
-      </tr>
-      <tr>
-          <td id = 'items'>test</td>
-          <td id = 'items'>test1</td>
-          <td id = 'items'>test2</td>
-          <td id = 'items'>test3</td>
-      </tr>
-      <tr>
-          <td id = 'items'>test</td>
-          <td id = 'items'>test1</td>
-          <td id = 'items'>test2</td>
-          <td id = 'items'>test3</td>
-      </tr>
-      <tr>
-          <td id = 'items'>test</td>
-          <td id = 'items'>test1</td>
-          <td id = 'items'>test2</td>
-          <td id = 'items'>test3</td>
-      </tr>
-      <tr>
-          <td id = 'items'>test</td>
-          <td id = 'items'>test1</td>
-          <td id = 'items'>test2</td>
-          <td id = 'items'>test3</td>
-      </tr>
-      <tr>
-          <td id = 'items'>test</td>
-          <td id = 'items'>test1</td>
-          <td id = 'items'>test2</td>
-          <td id = 'items'>test3</td>
-      </tr>
-      <tr>
-          <td id = 'items'>test</td>
-          <td id = 'items'>test1</td>
-          <td id = 'items'>test2</td>
-          <td id = 'items'>test3</td>
-      </tr>
-      </table>
-      <p>
-
-
-      </p>
+            <td id = 'items'>Computação</td>
+            <td id = 'items'>8</td>
+            <td id = 'items'>20%</td>
+            <td id = 'items'>-</td>
+        </tr>
+        <tr>
+            <td id = 'items'>Nosso Campeonato</td>
+            <td id = 'items'>4</td>
+            <td id = 'items'>100%</td>
+            <td id = 'items'>Marchezini</td>
+        </tr>
+        <tr>
+            <td id = 'items'>test</td>
+            <td id = 'items'>test1</td>
+            <td id = 'items'>test2</td>
+            <td id = 'items'>test3</td>
+        </tr>
+        <tr>
+            <td id = 'items'>test</td>
+            <td id = 'items'>test1</td>
+            <td id = 'items'>test2</td>
+            <td id = 'items'>test3</td>
+        </tr>
+        <tr>
+            <td id = 'items'>test</td>
+            <td id = 'items'>test1</td>
+            <td id = 'items'>test2</td>
+            <td id = 'items'>test3</td>
+        </tr>
+        <tr>
+            <td id = 'items'>test</td>
+            <td id = 'items'>test1</td>
+            <td id = 'items'>test2</td>
+            <td id = 'items'>test3</td>
+        </tr>
+        <tr>
+            <td id = 'items'>test</td>
+            <td id = 'items'>test1</td>
+            <td id = 'items'>test2</td>
+            <td id = 'items'>test3</td>
+        </tr>
+        <tr>
+            <td id = 'items'>test</td>
+            <td id = 'items'>test1</td>
+            <td id = 'items'>test2</td>
+            <td id = 'items'>test3</td>
+        </tr>
+        </table>
+      </div>
     </div>
 
       <footer>

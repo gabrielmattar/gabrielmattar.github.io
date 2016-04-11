@@ -80,7 +80,9 @@
   font-family: 'Catamaran', sans-serif;
   color: white;
 }
-#alinhado input[type=text] {
+#alinhado input[type=text],
+#alinhado input[type=email],
+#alinhado input[type=password] {
     -webkit-appearance: none;
     appearance: none;
     display: inline-block;
