@@ -1,4 +1,93 @@
-.conteudo{
-  background-color: white;
 
+.divitite {
+  margin: 20px auto;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black;
+  background-color: #b3ccff;
+  /*background-color: rgba(255,255,255,0.5);*/
+}
+
+.conteudo{
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.conteudo, .conteudo ul {
+  display: flex;
+}
+
+.conteudo ul {
+  flex-direction: column;
+  width: 90%;
+  min-width: 50px;
+  max-width: 300px;
+  list-style: none;
+  padding: 0;
+}
+
+.game + li {
+  flex-grow: 1.0;
+}
+
+.conteudo li:first-child,.conteudo li:last-child {
+  flex-grow: 0.5;
+}
+
+
+.celula {
+  float:left;
+  width: 60%;
+  height: 30px;
+  padding-bottom: 7px;
+  font-size: 25px;
+  font-family: 'Catamaran', sans-serif;
+  box-shadow: 3px 3px 3px black;
+  border-radius: 3px;
+}
+
+.game-top > .celula {
+  transform: translateY(2px) translateX(-2px);
+  display: absolute;
+  background-color: #29a329;
+  color: white;
+}
+.game-bottom > .celula {
+  transform: translateY(-2px) translateX(-2px);
+  display: absolute;
+  background-color: white;
+  color: #29a329;
+}
+
+.game-top {
+  border-bottom: 2px solid black;
+}
+
+.game-top + li {
+  border-right: 2px solid black;
+  min-height: 50px;
+}
+#winner > li {
+  border: 0;
+}
+#winner .celula{
+  background-color: #0066ff;
+  color: white;
+}
+.game-bottom + li {
+  min-height: 50px;
+}
+.game-bottom {
+  border-top: 2px solid black;
+}
+
+
+@media only screen and (max-device-width: 750px),
+screen and (max-width: 750px){
+  .celula {
+    float:left;
+    font-size: 15px;
+    height: auto;
+    padding-bottom: 0;
+  }
 }

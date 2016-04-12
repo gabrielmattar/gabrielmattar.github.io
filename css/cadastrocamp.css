@@ -16,10 +16,10 @@
 .conteudo-cadastro form button{
   margin: 10px 10px;
   padding:5px 20px;
-  background:green;
+  background:white;
   border:0;
   border-radius: 2px;
-  color: white;
+  color: green;
   font-family: 'Catamaran', sans-serif;
   font-size: 18px;
   outline: 0;
@@ -89,8 +89,8 @@
 .submitn:active,
 .next:active{
   box-shadow: 5px 5px 5px black;
-  color: #1f7a1f;
-  background-color: #e0e0d2;
+  color: #e0e0d2;
+  background-color: #1f7a1f;
   transform: translateY(-3px);
   outline: 0;
 
