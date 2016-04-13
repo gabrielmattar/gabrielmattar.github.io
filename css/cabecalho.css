@@ -1,9 +1,24 @@
+body {
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
 button {
   -webkit-transition: transform 0.1s ease-in;
   -ms-transition: transform 0.1s ease-in;
   -moz-transition: transform 0.1s ease-in;
   -o-transition: transform 0.1s ease-in;
   transition: transform 0.1s ease-in;
+  outline: none;
+}
+
+button:active,
+button:focus,
+a:active,
+a:focus {
+    -moz-outline-style: none;
+    outline: none;
 }
 header {
   padding: 0px;
@@ -207,7 +222,7 @@ screen and (max-width: 860px){
 }
 
 /* saf3+, chrome1+ */
-@media screen and (-webkit-min-device-pixel-ratio:0) {
+@media screen and (-webkit-min-device-pixel-ratio:0) and (max-width: 860px){
   .menu {
     display: inline;
     width: 100%;
