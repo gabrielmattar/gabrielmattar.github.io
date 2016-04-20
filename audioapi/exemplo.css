@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+}
+
+.conteudo {
+  width: 80%;
+  background-color: darkgrey;
+  margin: 0 auto;
+}
+
+audio {
+  margin: 0 auto;
+}
