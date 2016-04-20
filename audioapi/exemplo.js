@@ -12,10 +12,10 @@ var mscbuffer = loadSound('musica.mp3');
 musica.buffer = mscbuffer;
 
 
-musica.connect(gain);
+musica.connect(context.destination);
 gain.connect(context.destination);
 
-musica.start(0);
+musica.start(context.currentTime);
 
 function loadSound(url) {
   var request = new XMLHttpRequest();
@@ -26,7 +26,7 @@ function loadSound(url) {
   request.onload = function() {
     context.decodeAudioData(request.response, function(buffer) {
       console.log(buffer);
-      return buffer;
+      musica.buffer = buffer;
     });
   }
   request.send();
