@@ -4,20 +4,25 @@ var AudioContext = window.AudioContext ||
 var context = new AudioContext();
 
 
-var musica = context.createBufferSource();
+var musica1 = context.createBufferSource();
+var musica2 = context.createBufferSource();
 var gain = context.createGain();
 
-var mscbuffer = loadSound('musica.mp3');
 
-musica.buffer = mscbuffer;
-
-
-musica.connect(context.destination);
+musica1.connect(gain);
+musica2.connect(gain);
 gain.connect(context.destination);
 
-musica.start(context.currentTime);
 
-function loadSound(url) {
+carregaSom('musica.mp3', musica1);
+carregaSom('musica2.mp3', musica2);
+
+musica2.start(context.currentTime);
+
+
+
+
+function carregaSom(url, musiquinha) {
   var request = new XMLHttpRequest();
   request.open('GET', url, true);
   request.responseType = 'arraybuffer';
@@ -26,7 +31,7 @@ function loadSound(url) {
   request.onload = function() {
     context.decodeAudioData(request.response, function(buffer) {
       console.log(buffer);
-      musica.buffer = buffer;
+      musiquinha.buffer = buffer;
     });
   }
   request.send();
