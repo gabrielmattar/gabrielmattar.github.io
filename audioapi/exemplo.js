@@ -25,6 +25,7 @@ function loadSound(url) {
   // Decode asynchronously
   request.onload = function() {
     context.decodeAudioData(request.response, function(buffer) {
+      console.log(buffer);
       return buffer;
     });
   }
